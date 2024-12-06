@@ -1,0 +1,20 @@
+ <section>
+ <legend class="tituloProducto"> Listas de Productos</legend>
+ <div class="contenedorGeneral"  >  
+  @for (elemento of productos; track $index) {
+    
+    <div class="contenedorCarta"  [routerLink]="['/productosDetalle', elemento.id]"   >
+    
+      <div class="contenedorImagenes">
+        <img [src]="elemento.imagen" class="imagenProducto" >
+      </div>
+    
+    <h3 class="nombre">{{elemento.nombre}}</h3>
+    <div class="contenedorPrecio">
+      <p class="precio">${{elemento.precio}} </p>
+    </div>
+  </div>
+}
+ </div>
+
+ </section>

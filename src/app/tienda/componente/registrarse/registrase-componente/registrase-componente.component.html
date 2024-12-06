@@ -1,0 +1,44 @@
+<div class="">
+    <legend class="legendUsuario">
+        <h3 class="titulo">Registrate como usuario!</h3>
+    </legend>
+</div>
+
+<div class="container">
+    <div class="boxFormulario">
+
+        <form class="formularioForm" >
+         
+            <div class="nombreCaja">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" class="form-control" name="nombre" placeholder="NOMBRE">
+            </div>
+            <div class="sexoCaja">
+                <select name="sexo">
+                    <option > masculino  </option>
+                    <option > femenino  </option>
+                    <option > otros  </option>
+                </select>
+            </div>
+            <div class="emailCaja">
+            
+                <input type="email" class="emailInput" id="email" name="email" placeholder="EMAIL">
+            </div>
+
+
+            <div class="passwordCaja">
+                <input type="password" class="passwordInput" name="password" placeholder="CONTRASEÑA">
+            </div>
+            <div class="passwordCaja">
+                <input type="password" class="form-control" name="password2"  placeholder="REPETIR CONTRASEÑA">
+            </div>
+            <div class="botonesContainer">
+                <button type="submit" class="">Registrarme</button>
+                <a th:href="@{/}" class="volverButton">Volver</a>
+                
+            </div>
+           
+        </form>
+
+    </div>
+</div>

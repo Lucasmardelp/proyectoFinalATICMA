@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gugi&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap');
+.containerTitulo{
+    display: flex;
+   justify-content: center;
+}
+
+.tituloApp{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-top: 4rem;
+ 
+  
+}
+
+.containerTabla{
+    display: flex;
+       align-items: center;
+       justify-content: center;
+    
+  
+}
+
+
+table{
+    margin-top: 2rem;
+    margin-left: 5rem;
+    background-color: rgba(244, 236, 236, 0.448);
+    width: 94rem;
+    border: none;
+    margin: auto;
+}
+
+
+
+.titleRow{
+    text-align: center;
+    background-color: #23B5D3 ;
+    height: auto;
+    border: #23B5D3;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.titleNombre{
+    display: flex;
+    justify-content: center;
+    background-color: #23B5D3 ;
+    height: auto;
+    border: #23B5D3;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.titleId{
+    text-align: center;
+    background-color: #23B5D3 ;
+    height: auto;
+    border: #23B5D3;
+    color: white;
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+tr:hover{
+    background-color: rgb(230, 219, 219);
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.datos{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+.contenido{
+    display: flex;
+    justify-content: center;
+}
+
+.descripcion{
+    height: 2rem;
+    position: relative;
+    left: 5.5rem
+}
+
+
+.editCelda{
+    width: 4rem;
+}
+.edit{
+    width: 5rem;
+}
+
+.deleteCelda{
+    width: 5rem;
+}
+
+.imgEdit{
+    width: 10rem;
+    height: 10rem;
+}
+
+.eliminarEdit{
+    margin-left: 10px;
+}
+
+.imagenEdit:hover{
+    background-color: rgb(213, 213, 26);
+}
+
+
+.eliminarEdit:hover{
+    background-color: rgb(213, 38, 26);
+}
+
+.editCelda:hover{
+    background-color: rgb(213, 213, 26);
+    border-radius: 10px;
+}
+
+.deleteCelda:hover{
+    background-color: rgb(213, 38, 26);
+    border-radius: 10px;
+    
+
+}

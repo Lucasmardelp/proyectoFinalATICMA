@@ -1,0 +1,36 @@
+<div class="containerTitulo">
+    <h1 class="tituloApp">Sitema de inventario </h1>
+</div>
+
+<div class="containerTabla">
+    <div class="boxTabla">
+        <table>
+            <thead>
+            <tr>
+                <td class="titleRow"><p > id</p></td>
+                <td class="titleRow"><p class="nombre">Nombre</p></td>
+                <td class="titleRow"><p class="precio">Precio</p></td>
+                <td class="titleRow"><p class="existencia">Existencia</p> </td>
+                <td class="titleRow"><p class="titleRow"><img src="" alt="">Editar</p></td>
+                <td class="titleRow"><p class="titleRow">Eliminar</p></td>
+            </tr>
+             @for (elemento of productos; track $index) {
+            <tr>
+                <th class="datos" ><p >{{elemento.id}}</p></th>
+                <td class="datos" ><p class="contenido">{{elemento.nombre}}</p></td>
+                <td class="datos"><p class="contenido">{{elemento.precio}}</p></td>
+                <td class="datos" ><p class="contenido"></p></td>
+              
+                <td class="editCelda"  [routerLink]="['/editarProducto', elemento.id]" ><div>
+                    <a    class="edit"><img  class="imagenEditar" alt="" width="2rem" ></a><img src="edit.png" alt="" width="50rem" height="50rem" class="imagenEdit">
+                </div></td>
+                <td class="deleteCelda" (click)="elimiarProducto(elemento.id)"> <a th:href="@{/moditOEditPersona/eliminar/{id}(id=${contactos.idContacto})}" class="elim" ><img src="eliminar.png" alt="" width="50rem" height="50rem" class="eliminarEdit"> </a></td>
+            </tr>}
+            </thead>
+        
+        </table>
+        
+    </div>
+
+
+</div>

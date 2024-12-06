@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    
+}
+
+.containerInfo{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width:43%;
+    margin-left: 5rem;
+}
+
+.imagenTienda{
+    margin-top: 9rem;
+}
+
+.containerInfContacto{
+    height: 100%;
+    
+}
+
+.imgPhone{
+    display: flex;
+    justify-content: center;
+}
+
+.caricaturaDog{
+    width: 20%;
+    height: auto;
+  
+    
+}
+
+.boxInfG{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 80%;
+    margin-left: 6rem;
+    margin-top: 3rem;
+}
+
+legend,h3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+    margin-top: 5px;
+}
+
+.containerGnete{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nomEmail{
+    display: flex;
+    flex-direction: column;
+}
+
+.telEmpresa{
+    display: flex;
+flex-direction: column;
+}
+
+input{
+    height: 3rem;
+    padding-left: 10px;
+    margin-left: 1rem;
+    font-size: xx-large;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: none;
+    background-color: #04324d6b;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+label{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: x-large;
+}
+
+.containerTareaButton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+textarea{
+
+    height: 5rem;
+    width: 50%;
+    margin-top: 0.5rem;
+    
+}
+
+button{
+    margin-top: 3rem;
+    height: 2rem;
+    width: 15rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5rem;
+}
+
+button:hover{
+    background-color: #44CCFF;
+    color: white;
+}

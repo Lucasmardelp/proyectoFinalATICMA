@@ -1,0 +1,27 @@
+<legend>Agregar producto</legend>
+    <fieldset class="containerFormulario">
+       <div>
+         
+     <form class="boxFormulario"  [formGroup]="productoForm" (ngSubmit)="agregarProducto()" >
+   
+      <label for="nombre">Nombre del producto</label>
+     <input type="text" id="nombre" formControlName='nombre' required>
+     
+     <label for="precio">Precio</label>
+     <input type="number" id="precio" formControlName='precio'  placeholder="Ej: 10000.00" >
+   
+     <label for="descripcion">Descripcion</label>
+     <textarea name="" id="descripcion" formControlName='descripcion' required></textarea>
+   <div class="imagenSubir">
+      <label for="imagen">Imagen del producto</label>
+      <input type="file" id="imagen" (change)="onFileSelected($event)" accept="image/*">
+   </div>
+     
+     <input type="hidden" formControlName="id"  required>
+     <button type="submit" >Agregar</button>
+            
+
+    
+    </form>
+       </div> 
+    </fieldset>

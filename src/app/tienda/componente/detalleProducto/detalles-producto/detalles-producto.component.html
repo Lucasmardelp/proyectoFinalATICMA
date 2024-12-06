@@ -1,0 +1,28 @@
+<app-navbar></app-navbar>
+
+<div class="containerDetalleProducto">
+    <div class="boxDetalle" *ngIf="producto">
+        <div class="nombreDetalles">
+            <h1 class="nombreProducto">{{producto.nombre}}</h1>
+            <p class="detalles">{{producto.descripcion}}</p>
+           <div class="buttonElEd">
+            <a class="editar" [routerLink]="['/editarProducto', producto.id]" >Editar</a>
+            <a class="eliminar" (click)="elimiarProducto(producto.id)">Eliminar</a>
+            
+           </div>
+           
+        </div>
+        <div class="boxImagen">
+        <img [src]="producto.imagen" alt="{{producto.nombre}}">
+       <div class="precio">
+        <h3 >Precio : ${{producto.precio}}</h3>
+       </div>
+      
+    </div>
+ 
+    </div>
+
+
+
+   
+</div>
